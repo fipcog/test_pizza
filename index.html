@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <meta charset="utf-8">
+        <title>Pizza</title>
+        <meta name="description" content="">
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="jquery-ui-1.12.1.custom/jquery-ui.css">
+    </head>
+    <body>
+        <main class="main">
+            <form class="order">
+                <h1>jQuery form</h1>
+                <select class="pizza_name" autocomplete="off">
+                    <option value="0" selected>Выберите тип пиццы</option>
+                    <option value="pep">Пепперони</option>
+                    <option value="vil">Деревенская</option>
+                    <option value="haw">Гавайская</option>
+                    <option value="mush">Грибная</option>
+                </select>
+                <select class="pizza_size" autocomplete="off" disabled>
+                    <option value="0" selected>Выберите размер пиццы</option>
+                    <option value="21">21см</option>
+                    <option value="26">26см</option>
+                    <option value="31">31см</option>
+                    <option value="45">45см</option>
+                </select>
+                <select class="pizza_sauce" autocomplete="off" disabled>
+                    <option value="0" selected>Выберите соус к пицце</option>
+                    <option value="che">Сырный</option>
+                    <option value="sour">Кисло-сладкий</option>
+                    <option value="garl">Чесночный</option>
+                    <option value="bbq">Барбекю</option>
+                </select>
+                <button class="order__btn" autocomplete="off" disabled>Заказать</button>
+            </form>
+            <form class="order_UI">
+                <h1>jQuery UI form</h1>
+                <div class="wrapper">
+                    <input class="pizza_name_ui" placeholder="Выберите тип пиццы" autocomplete="off">
+                    <button class="drop_out" autocomplete="off"></button>
+                </div>
+                <div class="wrapper">
+                    <input class="pizza_size_ui" placeholder="Выберите размер пиццы" disabled autocomplete="off">
+                    <button class="drop_out" autocomplete="off" disabled></button>
+                </div>
+                <div class="wrapper">
+                    <input class="pizza_sauce_ui" placeholder="Выберите соус к пицце" disabled autocomplete="off">
+                    <button class="drop_out" autocomplete="off" disabled></button></div>
+                <button class="order__btn_ui"></button>
+            </form>
+        </main>
+        <script src="jquery-3.6.0.min.js"></script>
+        <script src="jquery-ui-1.12.1.custom/jquery-ui.js"></script>
+        <script src="data.js"></script>
+        <script src="form.js"></script>
+        <script src="jqui_form.js"></script>
+    </body>
+</html>
